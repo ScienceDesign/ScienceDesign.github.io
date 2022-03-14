@@ -1,0 +1,116 @@
+@charset "utf-8";
+#hd.on ~ .page_nation .page_lst:after{background-color: #f2800d;}
+#hd.on ~ .page_nation .anyimg{background-image: url(../data/any2.png);}
+#hd.on ~ .page_nation .page_lst li .item_btn{border: 2px solid #f2800d;}
+        
+#page1 .title{font-size: 5em; text-align: center; color: #fff; font-weight: 900; letter-spacing:-0.1em; line-height: 140%;margin-top: 20%;}
+#page1 video{position: absolute; right: 0; bottom: 0;top: -4%; left: 0;
+   min-width: 100%; min-height: 100%;
+   width: auto; height: auto; z-index: -100;   background-size: cover;   }
+
+#page2 {background-color: #fff8df; }
+#page2 .p2{float: left; height: 100%;}      
+#page2 .left{ width: 65%; }      
+#page2 .right{ width: 35%; }      
+#page2 .p2 img{display: block; margin-top: 20%;}      
+#page2 .left a{width: 89%; height: auto;background-image: url(../data/play.png);}      
+#page2 > div > div.left.p2 > div.popupModalVideo{width: 100%;height: 100%;}
+    #page2 > div > div.left.p2 > div.popupModalVideo a{width: 52.084%;height: 54.696%;position: absolute; top: 23%;left: 5%; background-size: 100% 100%;overflow: hidden; background-repeat: no-repeat;}
+#page2 .left .popupModalVideo:hover a{background-image: url(../data/video.jpg);}      
+#page2 .right img{width: 75%; height: auto; margin-top: 45%;}  
+.video_modal_popup.reveal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999
+}
+
+.video_modal_popup .video-wrapper {
+    position: relative;
+    width: 80%;
+    padding-bottom: 45%;
+    z-index: 1000
+}
+
+.video_modal_popup .video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9
+}
+
+.video_modal_popup.reveal .video_modal_popup-closer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 99
+}
+
+#page3 { background-image:url("../data/m_page3.jpg"); }
+#page3 .page_wrap{width: 100%; height: 55%; margin-right: 40%; margin-top: 13%; margin-left: 10%;} 
+#page3 > div > img{display: block; width: 36%;}
+
+#page4 { background-image:url("../data/m_page4.jpg");}
+#page4 > div > img{display: block; width: 41%;}       
+#page4 .more{display: block; width: 10%; height: 4%; border: 3px solid #51662a; border-radius: 30px; font-size: 1.5em; font-weight: 600; color: #51662a; text-align: center; line-height: 1.7em; position: absolute; top: 22%; left: 52%; letter-spacing:-0.1em;}
+#page4 .more:hover{background-color: #51662a; color: #fff; transition: 0.5s;}
+#page4 .page_wrap{width: 100%; height: 51%; margin-left: 50%; margin-top: 16%; }
+
+/*반응형스타일 */ 
+/* PC (해상도 1368px이상)*/
+@media all and (min-width:1368px)
+    {} 
+/*pc회사회의화면(해상도 1366px ~ 1367px)*/ 
+@media all and (min-width:1366px) and (max-width:1367px)
+{
+    #page1 .title{font-size: 3.5em;}
+    #page2 .right img{margin-top: 46%;}
+    #page4 .more{font-size: 0.9em;}
+}
+/* PC (해상도 1024px ~ 1365px)*/
+@media all and (min-width:1024px) and (max-width:1365px)  
+{
+    #page1 .title{font-size: 3.5em;}
+    #page2 > div > div.left.p2 > div.popupModalVideo a{width: 57%; height: 52%;}
+    #page2 .right img{margin-top: 60%;}
+    #page4 .more{font-size: 0.9em;line-height:2em;}
+    #page1 video{height: 108%;}
+    #page4 > div > img{margin-top: 4%;}
+} 
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) 
+{ 
+    #page1 .title{font-size: 3em; margin-top: 50%;}
+    #page1 video{min-height: 110%}
+    #page2 .left{width: 100%;}
+    #page2 .p2{float: none; height: 50%;}
+    #page2 > div > div.left.p2 > div.popupModalVideo a{width: 90%; height: 35%; top: 14%;}
+    #page2 .right{width: 100%;}
+    #page2 .right img{width: 55%; margin-top: 0;margin: 14% auto;}
+    #page3{background-image: url(../data/m_page3_t.jpg)}
+    #page3 .page_wrap {margin-top: 25%;}
+    #page3 > div > img{width: 67%;}
+    #page4{background-image: url(../data/m_page4_t.jpg);}
+    #page4 .page_wrap{margin-left: 30%;
+    margin-top: 30%;}
+    #page4 > div > img{width: 65%;}
+    #page4 .more{top: 16%; left: 33%;width: 23%;}
+} 
+/* 모바일 가로, 모바일 세로 (해상도 376px ~ 767px)*/ 
+@media all and (min-width:376px) and (max-width:767px) 
+{
+
+}
+/* 모바일 가로, 모바일 세로 (해상도 375px이하)*/ 
+@media all and (max-width:375px) 
+{
+
+}

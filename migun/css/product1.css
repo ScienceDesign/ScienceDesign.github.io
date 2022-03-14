@@ -1,0 +1,70 @@
+@charset "utf-8";
+        .page{background-size: auto;}
+        #page1{background-image: url(../data/product1_bgi1.jpg);}  
+        #page2{background-image: url(../data/product1_bgi2.jpg);}  
+        #page3{background-image: url(../data/product1_bgi3.jpg);}  
+        #page4{background-image: url(../data/product1_bgi4.jpg);}  
+        #hd #gnb > li:nth-child(1) > a{color: #f2800d; font-weight: bold;}
+        .page .page_wrap{width: 100%;height: 100%;}
+        .page .page_wrap img{display: block; }
+        #page1 > div > img{margin: 0 auto;width: 46.9%; margin-top: 7%;}
+        #page2 > div > img{width: 34.1%; margin-top: 10%;margin-left: 17%;}
+        #page3 > div > img{margin: 0 auto;width: 37.761%; height: auto;position: absolute; top: 29%;right: 17%;}
+        #page3 > div > img:nth-child(2){opacity: 0; animation-name: any;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+	}
+
+@keyframes any{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+        #page4 > div > img{width: 36.3542%; margin-top: 12%; margin-left: 12%;}
+        
+/*반응형스타일 */ 
+/* PC (해상도 1368px이상)*/
+@media all and (min-width:1368px)
+    {} 
+/*회사pc (해상도 1366px ~ 1367px)*/
+@media all and (min-width:1366px) and (max-width:1367px){
+    .page{background-size: 100vw 100%;}
+    #page1 > div > img{margin-top: 5%;width: 47%;}
+}
+/* PC (해상도 1024px ~ 1365px)*/
+@media all and (min-width:1024px) and (max-width:1365px)  
+{
+    .page{background-size: 100vw 100%;}
+    #page1 > div > img{margin-top: 9%;width: 52%;}
+    
+} 
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) 
+{ 
+    .page{background-size: 100vw 100%;}
+    #page1{background-image: url(../data/product1_bgi1_t.jpg);}
+    #page1 > div > img{width: 85%;margin-top: 36%;}
+    #page2{background-image: url(../data/product1_bgi2_t.jpg);}
+    #page2 > div > img{width: 55%;margin-top: 32%;margin-left: 15%;}
+    #page3{background-image: url(../data/product1_bgi3_t.jpg);}
+    #page3 > div > img{width: 55%;right: 1%;}
+    #page4{background-image: url(../data/product1_bgi4_t.jpg);}
+    #page4 > div > img{width: 55%;margin-top: 23%;}
+} 
+/* 모바일 가로, 모바일 세로 (해상도 376px ~ 767px)*/ 
+@media all and (min-width:376px) and (max-width:767px) 
+{    .page{background-size: 100% 100%;}
+#page1{background-image:url(../data/product1_bgi1_m2.jpg);}
+#page2{background-image:url(../data/product1_bgi2_m2.jpg);}
+#page3{background-image:url(../data/product1_bgi3_m2.jpg);}
+#page4{background-image:url(../data/product1_bgi4_m2.jpg);}
+}
+/* 모바일 가로, 모바일 세로 (해상도 375px이하)*/ 
+@media all and (max-width:375px) 
+{
+
+}
+        
